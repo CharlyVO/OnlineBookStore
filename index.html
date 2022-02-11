@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Book Store</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <!-- Header Section Starts -->
+    <header class="header__section" id="header">
+        <section class="header__container container">
+            <!-- Logotype -->
+            <div class="logotype">
+                <a href="#header">
+                    <i class='bx bxs-book'></i>
+                    Bookly
+                </a>
+            </div>
+
+            <!-- Search -->
+            <div class="search__container" id="search__container">
+                <input type="search" placeholder="Search Here...">
+                <i class='bx bx-search-alt-2'></i>
+            </div>
+
+            <!-- Header Icons -->
+            <div class="header__icons">
+                <i class='bx bxs-search-alt-2' id="btn__search"></i>
+                <i class='bx bxs-heart'></i>
+                <i class='bx bxs-cart'></i>
+                <i class='bx bxs-user' id="btn__login"></i>
+            </div>
+        </section>
+    </header>
+    <!-- Header Section Ends -->
+
+    <!-- Login Form Starts -->
+    <section class="form__container" id="form__container">
+        <form action="" class="login__form">
+            <i class='bx bx-x-circle' id="btn__close"></i>
+
+            <h2>SIGN IN</h2>
+
+            <h3>Email</h3>
+            <input class="input" type="email" placeholder="Enter your email...">
+
+            <h3>Password</h3>
+            <input class="input" type="password" placeholder="Enter your password...">
+
+            <div class="checkbox">
+                <input type="checkbox" id="check">
+                <label for="check">Remember Me</label>
+            </div>
+
+            <button class="btn__sign button"><a href="#">Sign In</a></button>
+
+            <p>Forget Password? <span>Click here</span></p>
+            <p>Don't Have An Account? <span>Create One</span></p>
+        </form>
+    </section>
+    <!-- Login Form Ends -->
+
+    <!-- Navigation Bar Starts -->
+    <nav class="nav__bar" id="nav__bar">
+        <ul class="nav__list">
+            <li class="nav__item">
+                <a href="#header" class="link__item">
+                    <i class='bx bxs-home'></i>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="#featured" class="link__item">
+                    <i class='bx bx-list-ul'></i>
+                    <span>Featured</span>
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="#arrivals" class="link__item">
+                    <i class='bx bxs-purchase-tag'></i>
+                    <span>Arrivals</span>
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="#reviews" class="link__item">
+                    <i class='bx bxs-comment-detail'></i>
+                    <span>Reviews</span>
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="#blogs" class="link__item">
+                    <i class='bx bxl-blogger'></i>
+                    <span>Blogs</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Navigation Bar Ends -->
+
+    <!-- Main Starts -->
+    <main class="main">
+        <!-- Hero - Home Section Starts -->
+        <section class="hero__section" id="hero">
+            <div class="hero__container container">
+                <!-- Hero Content -->
+                <div class="hero__content">
+                    <span>Upto 75% Off</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde atque totam minus animi ducimus
+                        blanditiis ut sequi, dolore nam vel.</p>
+                    <button class="btn__hero button"><a href="#">Shop Now</a></button>
+                </div>
+
+                <!-- Hero Slider -->
+                <div class="hero__slider">
+                    <!-- Hero Slider Rows -->
+                    <div class="btn__left row" id="btn__left"><i class='bx bxs-left-arrow-circle'></i></div>
+                    <div class="btn__right row" id="btn__right"><i class='bx bxs-right-arrow-circle'></i></div>
+
+                    <div class="slider__container">
+                        <div class="slider__section">
+                            <div class="slider" id="slider">
+                                <div class="slider__item" id="slider__item"><img src="images/book-1.png"
+                                        alt="Slider Image 1"></div>
+                                <div class="slider__item" id="slider__item"><img src="images/book-2.png"
+                                        alt="Slider Image 2"></div>
+                                <div class="slider__item" id="slider__item"><img src="images/book-3.png"
+                                        alt="Slider Image 3"></div>
+                                <div class="slider__item" id="slider__item"><img src="images/book-4.png"
+                                        alt="Slider Image 4"></div>
+                                <div class="slider__item" id="slider__item"><img src="images/book-5.png"
+                                        alt="Slider Image 5"></div>
+                                <div class="slider__item" id="slider__item"><img src="images/book-6.png"
+                                        alt="Slider Image 6"></div>
+                            </div>
+                        </div>
+
+                        <img src="images/stand.png" alt="Stand" class="stand">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Hero - Home Section Ends -->
+
+        <!-- Icons Section Starts -->
+        <section class="icons__section">
+            <div class="icons__container container">
+                <div class="icon__item">
+                    <i class='bx bxs-package'></i>
+                    <div>
+                        <h3>Free Shipping</h3>
+                        <span>Order Over $100</span>
+                    </div>
+                </div>
+                <div class="icon__item">
+                    <i class='bx bxs-lock-alt'></i>
+                    <div>
+                        <h3>Secure Payment</h3>
+                        <span>100% Secure Payment</span>
+                    </div>
+                </div>
+                <div class="icon__item">
+                    <i class='bx bx-transfer'></i>
+                    <div>
+                        <h3>Easy Returns</h3>
+                        <span>10 Days Returns</span>
+                    </div>
+                </div>
+                <div class="icon__item">
+                    <i class='bx bx-headphone'></i>
+                    <div>
+                        <h3>24/7 Support</h3>
+                        <span>Call Us Anytime</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Icons Section Ends -->
+
+        <!-- Featured Section Starts -->
+        <section class="featured__section" id="featured">
+            <div class="featured__container container">
+                <!-- Section Title -->
+                <h2 class="section__title title"><span>Featured Books</span></h2>
+
+                <!-- Slider Featured Section -->
+                <div class="featured__slider">
+                    <!-- Hero Slider Rows -->
+                    <div class="btn__left row" id="btn__left"><i class='bx bxs-left-arrow'></i></div>
+                    <div class="btn__right row" id="btn__right"><i class='bx bxs-right-arrow'></i></div>
+
+                    <div class="slider__section">
+                        <div class="slider" id="slider">
+                            <div class="slider__item" id="slider__item">
+                                <div class="hover__item">
+                                    <div><i class='bx bx-search-alt-2'></i></div>
+                                    <div><i class='bx bxs-heart'></i></div>
+                                    <div><i class='bx bx-show-alt'></i></div>
+                                </div>
+
+                                <div class="slider__img"><img src="images/book-1.png" alt="Book Image"></div>
+
+                                <div class="item__title">
+                                    <h3>Featured Books</h3>
+                                </div>
+
+                                <p>$15.99 <span>$20.99</span></p>
+
+                                <button class="button"><a href="#">Add To Cart</a></button>
+                            </div>
+                            <div class="slider__item" id="slider__item">
+                                <div class="hover__item">
+                                    <div><i class='bx bx-search-alt-2'></i></div>
+                                    <div><i class='bx bxs-heart'></i></div>
+                                    <div><i class='bx bx-show-alt'></i></div>
+                                </div>
+
+                                <div class="slider__img"><img src="images/book-2.png" alt="Book Image"></div>
+
+                                <div class="item__title">
+                                    <h3>Featured Books</h3>
+                                </div>
+
+                                <p>$15.99 <span>$20.99</span></p>
+
+                                <button class="button"><a href="#">Add To Cart</a></button>
+                            </div>
+                            <div class="slider__item" id="slider__item">
+                                <div class="hover__item">
+                                    <div><i class='bx bx-search-alt-2'></i></div>
+                                    <div><i class='bx bxs-heart'></i></div>
+                                    <div><i class='bx bx-show-alt'></i></div>
+                                </div>
+
+                                <div class="slider__img"><img src="images/book-3.png" alt="Book Image"></div>
+
+                                <div class="item__title">
+                                    <h3>Featured Books</h3>
+                                </div>
+
+                                <p>$15.99 <span>$20.99</span></p>
+
+                                <button class="button"><a href="#">Add To Cart</a></button>
+                            </div>
+                            <div class="slider__item" id="slider__item">
+                                <div class="hover__item">
+                                    <div><i class='bx bx-search-alt-2'></i></div>
+                                    <div><i class='bx bxs-heart'></i></div>
+                                    <div><i class='bx bx-show-alt'></i></div>
+                                </div>
+
+                                <div class="slider__img"><img src="images/book-4.png" alt="Book Image"></div>
+
+                                <div class="item__title">
+                                    <h3>Featured Books</h3>
+                                </div>
+
+                                <p>$15.99 <span>$20.99</span></p>
+
+                                <button class="button"><a href="#">Add To Cart</a></button>
+                            </div>
+                            <div class="slider__item" id="slider__item">
+                                <div class="hover__item">
+                                    <div><i class='bx bx-search-alt-2'></i></div>
+                                    <div><i class='bx bxs-heart'></i></div>
+                                    <div><i class='bx bx-show-alt'></i></div>
+                                </div>
+
+                                <div class="slider__img"><img src="images/book-5.png" alt="Book Image"></div>
+
+                                <div class="item__title">
+                                    <h3>Featured Books</h3>
+                                </div>
+
+                                <p>$15.99 <span>$20.99</span></p>
+
+                                <button class="button"><a href="#">Add To Cart</a></button>
+                            </div>
+                            <div class="slider__item" id="slider__item">
+                                <div class="hover__item">
+                                    <div><i class='bx bx-search-alt-2'></i></div>
+                                    <div><i class='bx bxs-heart'></i></div>
+                                    <div><i class='bx bx-show-alt'></i></div>
+                                </div>
+
+                                <div class="slider__img"><img src="images/book-6.png" alt="Book Image"></div>
+
+                                <div class="item__title">
+                                    <h3>Featured Books</h3>
+                                </div>
+
+                                <p>$15.99 <span>$20.99</span></p>
+
+                                <button class="button"><a href="#">Add To Cart</a></button>
+                            </div>
+                            <div class="slider__item" id="slider__item">
+                                <div class="hover__item">
+                                    <div><i class='bx bx-search-alt-2'></i></div>
+                                    <div><i class='bx bxs-heart'></i></div>
+                                    <div><i class='bx bx-show-alt'></i></div>
+                                </div>
+
+                                <div class="slider__img"><img src="images/book-7.png" alt="Book Image"></div>
+
+                                <div class="item__title">
+                                    <h3>Featured Books</h3>
+                                </div>
+
+                                <p>$15.99 <span>$20.99</span></p>
+
+                                <button class="button"><a href="#">Add To Cart</a></button>
+                            </div>
+                            <div class="slider__item" id="slider__item">
+                                <div class="hover__item">
+                                    <div><i class='bx bx-search-alt-2'></i></div>
+                                    <div><i class='bx bxs-heart'></i></div>
+                                    <div><i class='bx bx-show-alt'></i></div>
+                                </div>
+
+                                <div class="slider__img"><img src="images/book-8.png" alt="Book Image"></div>
+
+                                <div class="item__title">
+                                    <h3>Featured Books</h3>
+                                </div>
+
+                                <p>$15.99 <span>$20.99</span></p>
+
+                                <button class="button"><a href="#">Add To Cart</a></button>
+                            </div>
+                            <div class="slider__item" id="slider__item">
+                                <div class="hover__item">
+                                    <div><i class='bx bx-search-alt-2'></i></div>
+                                    <div><i class='bx bxs-heart'></i></div>
+                                    <div><i class='bx bx-show-alt'></i></div>
+                                </div>
+
+                                <div class="slider__img"><img src="images/book-9.png" alt="Book Image"></div>
+
+                                <div class="item__title">
+                                    <h3>Featured Books</h3>
+                                </div>
+
+                                <p>$15.99 <span>$20.99</span></p>
+
+                                <button class="button"><a href="#">Add To Cart</a></button>
+                            </div>
+                            <div class="slider__item" id="slider__item">
+                                <div class="hover__item">
+                                    <div><i class='bx bx-search-alt-2'></i></div>
+                                    <div><i class='bx bxs-heart'></i></div>
+                                    <div><i class='bx bx-show-alt'></i></div>
+                                </div>
+
+                                <div class="slider__img"><img src="images/book-10.png" alt="Book Image"></div>
+
+                                <div class="item__title">
+                                    <h3>Featured Books</h3>
+                                </div>
+
+                                <p>$15.99 <span>$20.99</span></p>
+
+                                <button class="button"><a href="#">Add To Cart</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Featured Section Ends -->
+
+        <!-- NewsLetter Section Starts -->
+        <section class="newsletter__section">
+            <div class="container">
+                <form action="" class="newsletter__form">
+                    <h3>Subscribe For Latest Updates</h3>
+                    <input type="email" placeholder="Enter your email...">
+                    <button class="button"><a href="#">Subscribe</a></button>
+                </form>
+            </div>
+        </section>
+        <!-- NewsLetter Section Ends -->
+
+        <!-- Arrivals Section Starts -->
+        <section class="arrivals__section" id="arrivals">
+            <div class="arrivals__container container">
+                <!-- Section Title -->
+                <h2 class="section__title title"><span>New Arrivals</span></h2>
+
+                <!-- Arrivals Slider -->
+                <div class="arrivals__slider">
+                    <!-- Hero Slider Rows -->
+                    <div class="btn__left row" id="btn__left"><i class='bx bxs-left-arrow-square'></i></div>
+                    <div class="btn__right row" id="btn__right"><i class='bx bxs-right-arrow-square'></i></div>
+
+                    <div class="slider__section">
+                        <div class="slider" id="slider">
+                            <div class="slider__item" id="slider__item">
+                                <div class="item__img"><img src="images/book-1.png" alt="Book Image"></div>
+
+                                <div class="item__info">
+                                    <h3>New Arrivals</h3>
+                                    <p>$15.99 <span>$20.99</span></p>
+                                    <div class="stars">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star-half'></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider__item" id="slider__item">
+                                <div class="item__img"><img src="images/book-2.png" alt="Book Image"></div>
+
+                                <div class="item__info">
+                                    <h3>New Arrivals</h3>
+                                    <p>$15.99 <span>$20.99</span></p>
+                                    <div class="stars">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star-half'></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider__item" id="slider__item">
+                                <div class="item__img"><img src="images/book-3.png" alt="Book Image"></div>
+
+                                <div class="item__info">
+                                    <h3>New Arrivals</h3>
+                                    <p>$15.99 <span>$20.99</span></p>
+                                    <div class="stars">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star-half'></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider__item" id="slider__item">
+                                <div class="item__img"><img src="images/book-4.png" alt="Book Image"></div>
+
+                                <div class="item__info">
+                                    <h3>New Arrivals</h3>
+                                    <p>$15.99 <span>$20.99</span></p>
+                                    <div class="stars">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star-half'></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider__item" id="slider__item">
+                                <div class="item__img"><img src="images/book-5.png" alt="Book Image"></div>
+
+                                <div class="item__info">
+                                    <h3>New Arrivals</h3>
+                                    <p>$15.99 <span>$20.99</span></p>
+                                    <div class="stars">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star-half'></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="arrivals__slider2">
+                    <!-- Hero Slider Rows -->
+                    <div class="btn__left row" id="btn__left2"><i class='bx bxs-left-arrow-square'></i></div>
+                    <div class="btn__right row" id="btn__right2"><i class='bx bxs-right-arrow-square'></i></div>
+
+                    <div class="slider__section">
+                        <div class="slider" id="slider2">
+                            <div class="slider__item" id="slider__item2">
+                                <div class="item__img"><img src="images/book-6.png" alt="Book Image"></div>
+
+                                <div class="item__info">
+                                    <h3>New Arrivals</h3>
+                                    <p>$15.99 <span>$20.99</span></p>
+                                    <div class="stars">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star-half'></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider__item" id="slider__item2">
+                                <div class="item__img"><img src="images/book-7.png" alt="Book Image"></div>
+
+                                <div class="item__info">
+                                    <h3>New Arrivals</h3>
+                                    <p>$15.99 <span>$20.99</span></p>
+                                    <div class="stars">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star-half'></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider__item" id="slider__item2">
+                                <div class="item__img"><img src="images/book-8.png" alt="Book Image"></div>
+
+                                <div class="item__info">
+                                    <h3>New Arrivals</h3>
+                                    <p>$15.99 <span>$20.99</span></p>
+                                    <div class="stars">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star-half'></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider__item" id="slider__item2">
+                                <div class="item__img"><img src="images/book-9.png" alt="Book Image"></div>
+
+                                <div class="item__info">
+                                    <h3>New Arrivals</h3>
+                                    <p>$15.99 <span>$20.99</span></p>
+                                    <div class="stars">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star-half'></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider__item" id="slider__item2">
+                                <div class="item__img"><img src="images/book-10.png" alt="Book Image"></div>
+
+                                <div class="item__info">
+                                    <h3>New Arrivals</h3>
+                                    <p>$15.99 <span>$20.99</span></p>
+                                    <div class="stars">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star-half'></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Arrivals Section Ends -->
+
+        <!-- Deal Section Starts -->
+        <section class="deal__section">
+            <div class="deal__container container">
+                <div class="deal__content">
+                    <h3>Deal Of The Day</h3>
+                    <h2>Upto 50% Off</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, molestiae qui! Delectus ea
+                        alias odit quibusdam est necessitatibus iste repellat.</p>
+                    <button class="button"><a href="#">Shop Now</a></button>
+                </div>
+
+                <div class="deal__img">
+                    <img src="images/deal-img.jpg" alt="Deal Section Image">
+                </div>
+            </div>
+        </section>
+        <!-- Deal Section Ends -->
+
+        <!-- Reviews Section Starts -->
+        <section class="reviews__section" id="reviews">
+            <div class="reviews__container container">
+                <!-- Section Title -->
+                <h2 class="section__title title"><span>Client's Reviews</span></h2>
+
+                <!-- Reviews Section Slider -->
+                <div class="reviews__slider">
+                    <!-- Slider Rows -->
+                    <div class="btn__left row" id="btn__left"><i class='bx bxs-left-arrow-square'></i></div>
+                    <div class="btn__right row" id="btn__right"><i class='bx bxs-right-arrow-square'></i></div>
+
+                    <div class="slider__section">
+                        <div class="slider" id="slider">
+                            <div class="slider__item" id="slider__item">
+                                <div class="item__img"><img src="images/pic-1.png" alt="User Image"></div>
+                                <h3>John Deo</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum autem sed
+                                    consequatur iusto? Maxime, mollitia.</p>
+                                <div class="stars">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star-half'></i>
+                                </div>
+                            </div>
+                            <div class="slider__item" id="slider__item">
+                                <div class="item__img"><img src="images/pic-2.png" alt="User Image"></div>
+                                <h3>John Deo</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum autem sed
+                                    consequatur iusto? Maxime, mollitia.</p>
+                                <div class="stars">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star-half'></i>
+                                </div>
+                            </div>
+                            <div class="slider__item" id="slider__item">
+                                <div class="item__img"><img src="images/pic-3.png" alt="User Image"></div>
+                                <h3>John Deo</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum autem sed
+                                    consequatur iusto? Maxime, mollitia.</p>
+                                <div class="stars">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star-half'></i>
+                                </div>
+                            </div>
+                            <div class="slider__item" id="slider__item">
+                                <div class="item__img"><img src="images/pic-4.png" alt="User Image"></div>
+                                <h3>John Deo</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum autem sed
+                                    consequatur iusto? Maxime, mollitia.</p>
+                                <div class="stars">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star-half'></i>
+                                </div>
+                            </div>
+                            <div class="slider__item" id="slider__item">
+                                <div class="item__img"><img src="images/pic-5.png" alt="User Image"></div>
+                                <h3>John Deo</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum autem sed
+                                    consequatur iusto? Maxime, mollitia.</p>
+                                <div class="stars">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star-half'></i>
+                                </div>
+                            </div>
+                            <div class="slider__item" id="slider__item">
+                                <div class="item__img"><img src="images/pic-6.png" alt="User Image"></div>
+                                <h3>John Deo</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum autem sed
+                                    consequatur iusto? Maxime, mollitia.</p>
+                                <div class="stars">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star-half'></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Reviews Section Ends -->
+
+        <!-- Blogs Section Starts -->
+        <section class="blogs__section" id="blogs">
+            <div class="blogs__container container">
+                <!-- Section Title -->
+                <h2 class="section__title title"><span>Our Blogs</span></h2>
+
+                <!-- Slider Section -->
+                <div class="blogs__slider">
+                    <!-- Slider Rows -->
+                    <div class="btn__left row" id="btn__left"><i class='bx bxs-left-arrow'></i></div>
+                    <div class="btn__right row" id="btn__right"><i class='bx bxs-right-arrow'></i></div>
+
+                    <div class="slider__section">
+                        <div class="slider" id="slider">
+                            <div class="slider__item" id="slider__item">
+                                <div class="item__img"><img src="images/blog-1.jpg" alt="Blog Image"></div>
+
+                                <div class="item__info">
+                                    <h3>Blog Title Goes Here</h3>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, magnam.</p>
+                                    <button class="button"><a href="#">Read More</a></button>
+                                </div>
+                            </div>
+                            <div class="slider__item" id="slider__item">
+                                <div class="item__img"><img src="images/blog-2.jpg" alt="Blog Image"></div>
+
+                                <div class="item__info">
+                                    <h3>Blog Title Goes Here</h3>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, magnam.</p>
+                                    <button class="button"><a href="#">Read More</a></button>
+                                </div>
+                            </div>
+                            <div class="slider__item" id="slider__item">
+                                <div class="item__img"><img src="images/blog-3.jpg" alt="Blog Image"></div>
+
+                                <div class="item__info">
+                                    <h3>Blog Title Goes Here</h3>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, magnam.</p>
+                                    <button class="button"><a href="#">Read More</a></button>
+                                </div>
+                            </div>
+                            <div class="slider__item" id="slider__item">
+                                <div class="item__img"><img src="images/blog-4.jpg" alt="Blog Image"></div>
+
+                                <div class="item__info">
+                                    <h3>Blog Title Goes Here</h3>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, magnam.</p>
+                                    <button class="button"><a href="#">Read More</a></button>
+                                </div>
+                            </div>
+                            <div class="slider__item" id="slider__item">
+                                <div class="item__img"><img src="images/blog-5.jpg" alt="Blog Image"></div>
+
+                                <div class="item__info">
+                                    <h3>Blog Title Goes Here</h3>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, magnam.</p>
+                                    <button class="button"><a href="#">Read More</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Blogs Section Ends -->
+    </main>
+    <!-- Main Ends -->
+
+    <!-- Footer Starts -->
+    <footer class="footer__section">
+        <section class="footer__container container">
+            <div class="footer__info">
+                <div>
+                    <h3>Our Locations</h3>
+
+                    <div>
+                        <a href="#"><i class='bx bxs-map'></i> India</a>
+                        <a href="#"><i class='bx bxs-map'></i> USA</a>
+                        <a href="#"><i class='bx bxs-map'></i> Russia</a>
+                        <a href="#"><i class='bx bxs-map'></i> France</a>
+                        <a href="#"><i class='bx bxs-map'></i> Japan</a>
+                        <a href="#"><i class='bx bxs-map'></i> Africa</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Quick Links</h3>
+
+                    <div>
+                        <a href="#header"><i class='bx bx-right-arrow-alt'></i> Home</a>
+                        <a href="#featured"><i class='bx bx-right-arrow-alt'></i> Featured</a>
+                        <a href="#arrivals"><i class='bx bx-right-arrow-alt'></i> Arrivals</a>
+                        <a href="#reviews"><i class='bx bx-right-arrow-alt'></i> Reviews</a>
+                        <a href="#blogs"><i class='bx bx-right-arrow-alt'></i> Blogs</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Extra Links</h3>
+
+                    <div>
+                        <a href="#"><i class='bx bx-right-arrow-alt'></i> Account Info</a>
+                        <a href="#"><i class='bx bx-right-arrow-alt'></i> Ordered Items</a>
+                        <a href="#"><i class='bx bx-right-arrow-alt'></i> Privacy Policy</a>
+                        <a href="#"><i class='bx bx-right-arrow-alt'></i> Payment Method</a>
+                        <a href="#"><i class='bx bx-right-arrow-alt'></i> Our Services</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Contact Info</h3>
+
+                    <div>
+                        <a href="#"><i class='bx bxs-phone'></i> +123-456-7890</a>
+                        <a href="#"><i class='bx bxs-phone'></i> +111-222-3333</a>
+                        <a href="#"><i class='bx bxl-gmail'></i> correo@gmail.com</a>
+                        <img src="images/worldmap.png" alt="WorldMap Image">
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__icons">
+                <div class="icon"><i class='bx bxl-facebook'></i></div>
+                <div class="icon"><i class='bx bxl-twitter'></i></div>
+                <div class="icon"><i class='bx bxl-instagram-alt'></i></div>
+                <div class="icon"><i class='bx bxl-linkedin-square'></i></div>
+                <div class="icon"><i class='bx bxl-pinterest'></i></div>
+            </div>
+
+            <div class="footer__credits"><h2>Created By <span>Charly V_O</span> | All Rights Reserved.</h2></div>
+        </section>
+    </footer>
+    <!-- Footer Ends -->
+
+    <!-- Loader Starts -->
+    <section class="loader" id="loader">
+        <img src="images/loader-img.gif" alt="Loader GIF">
+    </section>
+    <!-- Loader Ends -->
+
+    <!-- Script -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
